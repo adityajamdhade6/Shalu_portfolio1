@@ -35,9 +35,8 @@ const RightSection = () => {
             <AnimatedSection 
               key={index} 
               animation="fade-up" 
-              delay={index === 0 ? "100" : "200"}
             >
-              <div className="flex justify-between items-start gap-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 sm:gap-4">
                 <div>
                   <h3 className="text-xs font-bold tracking-wide uppercase">
                     {item.title}
@@ -46,7 +45,7 @@ const RightSection = () => {
                     {item.institution}
                   </p>
                 </div>
-                <span className="text-xs tracking-wide whitespace-nowrap">
+                <span className="text-xs tracking-wide text-muted-foreground sm:text-foreground sm:whitespace-nowrap mt-1 sm:mt-0">
                   {item.period}
                 </span>
               </div>
@@ -66,9 +65,8 @@ const RightSection = () => {
             <AnimatedSection 
               key={index} 
               animation="fade-up" 
-              delay={index < 2 ? "300" : "400"}
             >
-              <div className="flex justify-between items-start gap-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 sm:gap-4">
                 <div>
                   <h3 className="text-xs font-bold tracking-wide uppercase">
                     {item.company}
@@ -77,7 +75,7 @@ const RightSection = () => {
                     {item.role}
                   </p>
                 </div>
-                <span className="text-xs tracking-wide whitespace-nowrap">
+                <span className="text-xs tracking-wide text-muted-foreground sm:text-foreground sm:whitespace-nowrap mt-1 sm:mt-0">
                   {item.period}
                 </span>
               </div>

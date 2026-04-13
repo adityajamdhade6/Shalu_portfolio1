@@ -61,11 +61,11 @@ const Index = () => {
 
           {/* CENTER COLUMN — Hero Card */}
           <div className="lg:col-span-5 lg:order-2 order-1">
-            <div className="border border-border p-8 md:p-12 h-full flex flex-col justify-center relative overflow-hidden hero-grain min-h-[400px]">
+            <div className="border border-border p-6 sm:p-8 md:p-12 h-full flex flex-col justify-center relative overflow-hidden hero-grain min-h-[400px]">
 
               {/* Top: HELLO! + Name */}
               <div>
-                <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl tracking-tight leading-none">
+                <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-none overflow-hidden text-ellipsis">
                   {helloText.split("").map((char, i) => (
                     <motion.span
                       key={i}
@@ -80,7 +80,7 @@ const Index = () => {
                 </h1>
 
                 <motion.h2
-                  className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight mt-2"
+                  className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mt-2 break-words"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: helloText.length * 0.06 + 0.4, duration: 0.5, ease: "easeOut" }}
